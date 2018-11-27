@@ -1,8 +1,20 @@
 import Link from 'next/link'
 // import '../js/init'
+import Head from 'next/head'
 
 export default () => (
   <>
+    <Head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="TGL Contracting trail building solutions" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+      <link rel="stylesheet" href="../css/style.css" />
+      <title>TGL Contracting</title>
+    </Head>
+
     <header>
       <nav class="teal lighten-1" role="navigation">
         <div class="nav-wrapper container">
@@ -48,7 +60,7 @@ export default () => (
           </div>
         </section>
         <div class="parallax">
-          <img src="./images/wide-trail.jpg" alt="Trail img 1" />
+          <img src="/static/wide-trail.jpg" alt="Trail img 1" />
         </div>
       </div>
 
@@ -125,6 +137,6 @@ export default () => (
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
   </>
 )
