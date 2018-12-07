@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import Head from 'next/head'
 import React from 'react'
 import Footer from '../components/Footer'
+import Head from '../components/Head'
 import Navigation from '../components/Navigation'
 import Style from '../components/Style'
 
@@ -15,20 +15,7 @@ export default class extends React.Component {
   render(){
     return (
       <>
-        <Head>
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta name="description" content="TGL Contracting trail building solutions" />
-          <meta name="keywords" content="contracting, trail building, mountain biking, tracks, trails, pump track, trail solutions" />
-
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
-          <link rel="stylesheet" href="../css/style.css" />
-          <Style />
-          <title>TGL Contracting</title>
-        </Head>
-
+        <Head />
         <header>
           <Navigation />
         </header>
@@ -41,7 +28,7 @@ export default class extends React.Component {
                 <br />
                 <h1 className="header center white-text">TGL Contracting</h1>
                 <div className="row center">
-                  <h5 className="header col s12 light">Wellington-based trail construction and maintenance solutions</h5>
+                  <h5 className="header col s12 white-text light">Trail construction and maintenance solutions</h5>
                 </div>
                 <div className="row center">
                   <Link href="/work" prefetch>
@@ -54,7 +41,7 @@ export default class extends React.Component {
               </div>
             </section>
             <div className="parallax">
-              <img src="/static/wide-trail.jpg" alt="Trail img 1" />
+              <img src='/static/wide-trail.jpg' alt="Trail Image" />
             </div>
           </div>
 
@@ -100,7 +87,6 @@ export default class extends React.Component {
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-        <script type="text/javascript" src="../js/init.js"></script>
       </>
     )
   }
