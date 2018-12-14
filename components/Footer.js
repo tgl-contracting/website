@@ -1,10 +1,5 @@
 export default () => (
   <>
-    <style jsx global>{`
-      .icon-link:hover {
-        color: filter(invert(25%))
-      }
-    `}</style>
     <footer id="contact" className="page-footer teal">
       <div className="container">
         <div className="row">

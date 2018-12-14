@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Style from './Style'
 
-export default () => (
+export default ({ children }) => (
   <Head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
@@ -63,6 +63,10 @@ export default () => (
         margin: 0;
       }
     `}</style>
-    <title>TGL Contracting</title>
+    <title key="index">TGL Contracting</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    { children }
   </Head>
 )
