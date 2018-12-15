@@ -8,7 +8,6 @@ import Style from '../components/Style'
 export default class extends React.Component {
 
   componentDidMount() {
-    $('.button-collapse').sideNav();
     $('.parallax').parallax();
   }
 
