@@ -12,17 +12,8 @@ export default ({ children }) => (
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
     <style jsx global>{`
-      nav ul a,
-      nav .brand-logo {
-        color: #444;
-      }
-
       p {
         line-height: 2rem;
-      }
-
-      .button-collapse {
-        color: #26a69a;
       }
 
       .parallax-container {
